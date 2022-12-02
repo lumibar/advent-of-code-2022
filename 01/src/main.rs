@@ -1,7 +1,7 @@
 use std::fs;
 
 fn main() {
-    let file_contents = fs::read_to_string("1/input").expect("File could not be read!");
+    let file_contents = fs::read_to_string("01/input").expect("File could not be read!");
 
     // List of total calories for each elf
     let mut elf_calories: Vec<i32> = file_contents.split("\n\n").map(

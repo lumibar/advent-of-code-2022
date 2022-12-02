@@ -6,6 +6,4 @@ panic = 'abort'     # Abort on panic
 strip = true        # Strip symbols from binary*
 
 [workspace]
-members = [
-    "1",
-]
+members = ["[0-2][0-9]"]
