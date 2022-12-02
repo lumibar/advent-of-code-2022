@@ -1,7 +1,7 @@
 use std::fs;
 
 fn main() {
-    let file_contents = fs::read_to_string("input").expect("File could not be read!");
+    let file_contents = fs::read_to_string("1/input").expect("File could not be read!");
 
     // List of total calories for each elf
     let mut elf_calories: Vec<i32> = file_contents.split("\n\n").map(
@@ -19,5 +19,5 @@ fn main() {
     // Find the total calories they have between them
     let total = elf_calories.iter().sum::<i32>();
 
-    println!("{}", total)
+    println!("01 : {}", total)
 }
